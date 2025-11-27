@@ -149,3 +149,17 @@ img { max-width:100%; height:auto; display:block; }
   .hero-title{ font-size:22px; }
   .brand-text{ display:none; }
 }
+/* Cyber background for hero */
+#cyber-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}

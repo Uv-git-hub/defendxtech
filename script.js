@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => showStatus('Demo ready. Check the Live Demos section.'), 900);
   });
 
-  function showStatus(msg, isError=false) {
+  function showStatus(msg, isError = false) {
     formStatus.hidden = false;
     formStatus.textContent = msg;
     formStatus.style.color = isError ? '#ff8a8a' : '';
@@ -90,4 +90,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // footer year
   document.getElementById('year').textContent = new Date().getFullYear();
+});
+VANTA.NET({
+  el: "#cyber-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x00fff0,
+  backgroundColor: 0x00000A,
+  points: 12.00,
+  maxDistance: 22.00,
+  spacing: 18.00
 });
