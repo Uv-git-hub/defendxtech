@@ -419,7 +419,7 @@ body {
   color: var(--text-primary);
 }
 
-.service-category > p {
+.service-category>p {
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
 }
@@ -643,12 +643,29 @@ body {
   opacity: 0.5;
 }
 
-.industry-image.manufacturing::before { content: '⚙️'; }
-.industry-image.education::before { content: '🎓'; }
-.industry-image.government::before { content: '🏛️'; }
-.industry-image.healthcare::before { content: '🏥'; }
-.industry-image.finance::before { content: '💰'; }
-.industry-image.retail::before { content: '🛒'; }
+.industry-image.manufacturing::before {
+  content: '⚙️';
+}
+
+.industry-image.education::before {
+  content: '🎓';
+}
+
+.industry-image.government::before {
+  content: '🏛️';
+}
+
+.industry-image.healthcare::before {
+  content: '🏥';
+}
+
+.industry-image.finance::before {
+  content: '💰';
+}
+
+.industry-image.retail::before {
+  content: '🛒';
+}
 
 .industry-card h3 {
   padding: 1.5rem;
@@ -1007,4 +1024,150 @@ body {
   .cta-banner h2 {
     font-size: 1.5rem;
   }
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN — MOBILE & TABLET FIXES
+   ===================================================== */
+
+/* Tablet and below (max-width 992px) */
+@media (max-width: 992px) {
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Mobile Menu */
+  .nav.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--dark-surface);
+    width: 100%;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  /* Dropdown mobile */
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .dropdown-menu li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .stats {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid,
+  .detailed-benefits-grid,
+  .process-timeline,
+  .why-grid,
+  .industry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 2rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .service-category,
+  .benefit-card,
+  .detailed-benefit,
+  .process-step,
+  .industry-card,
+  .faq-item {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+
+  .section-sub {
+    font-size: 1rem;
+  }
+
+  .top-bar .container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .contact-points li {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
 }
