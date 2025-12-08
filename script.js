@@ -177,4 +177,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+// FAQ toggle
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    const isOpen = answer.style.display === 'block';
+    answer.style.display = isOpen ? 'none' : 'block';
+    button.classList.toggle('open', !isOpen);
+  });
+});
 
