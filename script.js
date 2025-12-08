@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const words = [
     'AI - Artificail intelligence',
     'SOC',
-    'Zero-Trust',
     'We automate incident response through AI-driven optimization.'
   ];
   const typedEl = document.getElementById('typed');
