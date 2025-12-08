@@ -456,7 +456,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, transparent 0%, rgba(62, 196, 200, 0.1) 100%);
+  background: #050816;
 }
 
 .cta-banner .container {
@@ -471,7 +471,7 @@ body {
 }
 
 .cta-banner .highlight {
-  color: var(--accent-color);
+  color: white;
 }
 
 /* Benefits Grid */
