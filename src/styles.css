@@ -1284,3 +1284,23 @@ body {
 .faq-question.open .faq-icon {
   transform: rotate(90deg);
 }
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1rem;
+  /* start padding 0 */
+}
+
+.faq-question.open+.faq-answer {
+  padding: 1rem;
+}
+
+.faq-question .faq-icon {
+  transition: transform 0.3s;
+}
+
+.faq-question.open .faq-icon {
+  transform: rotate(90deg);
+}

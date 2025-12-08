@@ -204,4 +204,26 @@ document.querySelectorAll('.faq-list .faq-question').forEach(button => {
     }
   });
 });
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    const isOpen = button.classList.contains('open');
+
+    // Close all other FAQ items (optional accordion behavior)
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      if (btn !== button) {
+        btn.classList.remove('open');
+        btn.nextElementSibling.style.maxHeight = null;
+      }
+    });
+
+    if (isOpen) {
+      button.classList.remove('open');
+      answer.style.maxHeight = null;
+    } else {
+      button.classList.add('open');
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+    }
+  });
+});
 
