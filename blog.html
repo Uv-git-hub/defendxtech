@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Insights & News — Defendxtech Blog</title>
+  <meta name="description" content="Stay updated with the latest cybersecurity insights, threat intelligence, and industry news from DefendXTech experts.">
+  <link rel="stylesheet" href="./src/styles.css">
+  <link rel="stylesheet" href="./src/blog-styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" width="48" height="48" viewBox="0 0 200 200" fill="none">
+          <path d="M100 10 L180 55 L180 145 L100 190 L20 145 L20 55 Z" stroke="#4ED0F8" stroke-width="10" fill="none" />
+          <path d="M70 85 L100 65 L130 85" stroke="#4ED0F8" stroke-width="10" fill="none" stroke-linecap="round" />
+          <path d="M70 115 L100 135 L130 115" stroke="#4ED0F8" stroke-width="10" fill="none" stroke-linecap="round" />
+          <text x="100" y="110" font-size="48" font-weight="700" text-anchor="middle" fill="white">DxT</text>
+        </svg>
+        <span class="brand-text">Defendxtech</span>
+      </a>
+
+      <nav class="nav">
+        <button id="nav-toggle" class="nav-toggle">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html#home">Home</a></li>
+          <li class="dropdown">
+            <a href="index.html#services">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="index.html#managed">Managed Services</a></li>
+              <li><a href="index.html#professional">Professional Services</a></li>
+              <li><a href="index.html#assessment">Assessment Services</a></li>
+              <li><a href="index.html#expertise">Expertise</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#solutions">Solutions</a></li>
+          <li><a href="index.html#industries">Industries</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a class="btn-cta" href="index.html#contact">Talk to us</a>
+        <button id="nav-toggle-mobile" class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Canvas for network animation -->
+  <canvas id="networkCanvas"></canvas>
+
+  <main class="main blog-page">
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+      <div class="container">
+        <p class="eyebrow">INSIGHTS & INTELLIGENCE</p>
+        <h1 class="hero-title">Cybersecurity Blog</h1>
+        <p class="hero-sub">Expert insights, threat intelligence, and industry trends to keep you ahead of cyber threats.</p>
+      </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section featured-section">
+      <div class="container">
+        <div class="featured-badge">Featured Article</div>
+        <div class="featured-article">
+          <div class="featured-content">
+            <span class="article-category">Threat Intelligence</span>
+            <h2>The Rise of AI-Powered Cyber Attacks: What Organizations Need to Know</h2>
+            <p class="article-excerpt">As artificial intelligence becomes more sophisticated, cybercriminals are leveraging these technologies to launch more targeted and evasive attacks. Learn how to protect your organization against this emerging threat landscape.</p>
+            <div class="article-meta">
+              <span class="author">By DefendXTech Research Team</span>
+              <span class="date">December 5, 2025</span>
+              <span class="read-time">8 min read</span>
+            </div>
+            <a href="blog-ai-attacks.html" class="btn primary">Read Article</a>
+          </div>
+          <div class="featured-image">
+            <div class="image-placeholder"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="blog-categories">
+          <button class="category-btn active" data-category="all">All Posts</button>
+          <button class="category-btn" data-category="threat-intelligence">Threat Intelligence</button>
+          <button class="category-btn" data-category="best-practices">Best Practices</button>
+          <button class="category-btn" data-category="industry-news">Industry News</button>
+          <button class="category-btn" data-category="case-studies">Case Studies</button>
+          <button class="category-btn" data-category="tutorials">Tutorials</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="section blog-grid-section">
+      <div class="container">
+        <div class="blog-grid">
+
+          <!-- Blog Post 1 -->
+          <article class="blog-card" data-category="best-practices">
+            <div class="blog-card-image">
+              <div class="image-placeholder"></div>
+              <span class="blog-category">Best Practices</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="blog-zero-trust.html">Implementing Zero Trust Architecture: A Comprehensive Guide</a></h3>
+              <p>Discover the fundamental principles of Zero Trust security and a step-by-step approach to implementing it in your organization.</p>
+              <div class="blog-card-meta">
+                <span class="date">Dec 3, 2025</span>
+                <span class="read-time">12 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Post 2 -->
+          <article class="blog-card" data-category="threat-intelligence">
+            <div class="blog-card-image">
+              <div class="image-placeholder"></div>
+              <span class="blog-category">Threat Intelligence</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="blog-ransomware-trends.html">2025 Ransomware Trends: Evolution of Extortion Tactics</a></h3>
+              <p>An in-depth analysis of how ransomware groups are evolving their tactics and what organizations can do to stay protected.</p>
+              <div class="blog-card-meta">
+                <span class="date">Nov 28, 2025</span>
+                <span class="read-time">10 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Post 3 -->
+          <article class="blog-card" data-category="tutorials">
+            <div class="blog-card-image">
+              <div class="image-placeholder"></div>
+              <span class="blog-category">Tutorials</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="blog-siem-setup.html">SIEM Implementation: Best Practices for Maximum ROI</a></h3>
+              <p>Learn how to properly configure and optimize your SIEM solution for effective threat detection and compliance reporting.</p>
+              <div class="blog-card-meta">
+                <span class="date">Nov 25, 2025</span>
+                <span class="read-time">15 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Post 4 -->
+          <article class="blog-card" data-category="industry-news">
+            <div class="blog-card-image">
+              <div class="image-placeholder"></div>
+              <span class="blog-category">Industry News</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="blog-compliance-updates.html">New GDPR Amendments: What Changed in 2025</a></h3>
+              <p>Breaking down the latest GDPR updates and their implications for data protection strategies in organizations worldwide.</p>
+              <div class="blog-card-meta">
+                <span class="date">Nov 20, 2025</span>
+                <span class="read-time">7 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Post 5 -->
+          <article class="blog-card" data-category="case-studies">
+            <div class="blog-card-image">
+              <div class="image-placeholder"></div>
+              <span class="blog-category">Case Studies</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="blog-case-study.html">How We Stopped a Multi-Stage APT Attack in 72 Hours</a></h3>
+              <p>A detailed case study of our incident response team's successful mitigation of a sophisticated advanced persistent threat.</p>
+              <div class="blog-card-meta">
+                <span class="date">Nov 15, 2025</span>
+                <span class="read-time">18 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog Post 6 -->
+          <article class="blog-card" data-category="best-practices">
+            <div class="blog-card-image">
+              <div class="image-placeholder"></div>
+              <span class="blog-category">Best Practices</span>
+            </div>
+            <div class="blog-card-content">
+              <h3><a href="blog-cloud-security.html">Cloud Security Fundamentals: Protecting Multi-Cloud Environments</a></h3>
+              <p>Essential strategies and tools for maintaining robust security across AWS, Azure, and Google Cloud platforms.</p>
+              <div class="blog-card-meta">
+                <span class="date">Nov 10, 2025</span>
+                <span class="read-time">11 min read</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Load More Button -->
+        <div class="blog-actions">
+          <button class="btn ghost">Load More Articles</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section newsletter-section">
+      <div class="container">
+        <div class="newsletter-box">
+          <h2>Stay Updated with Cybersecurity Insights</h2>
+          <p>Subscribe to our newsletter and get the latest threat intelligence, security tips, and industry news delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn primary">Subscribe</button>
+          </form>
+          <p class="newsletter-note">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <svg class="brand-icon" viewBox="0 0 50 50" fill="none">
+              <path d="M25 5L45 15V35L25 45L5 35V15L25 5Z" stroke="currentColor" stroke-width="2" />
+              <path d="M25 15L35 20V30L25 35L15 30V20L25 15Z" stroke="currentColor" stroke-width="2" />
+            </svg>
+            <span class="brand-text">Defendxtech</span>
+          </div>
+          <p>Fortify your business success by partnering with a global provider of cyber and information security services.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#managed">Managed</a></li>
+            <li><a href="index.html#assessment">Assessment</a></li>
+            <li><a href="index.html#professional">Professional</a></li>
+            <li><a href="index.html#expertise">Expertise</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#news">News Release</a></li>
+            <li><a href="#vulnerability">Vulnerability</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p>423,naroda business point naroda, Ahmedabad, India - 382330</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copy">© <span id="year">2025</span> Defendxtech — AI Driven.</div>
+        <div class="links">
+          <a href="privacy-policy.html">Terms and Privacy Policy</a>
+          <a href="#Cookies">Cookies Policy</a>
+          <a href="index.html#contact">Support Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+

@@ -1,0 +1,131 @@
+/* Privacy Policy Page Styles */
+
+.privacy-page {
+  padding-top: 2rem;
+}
+
+.privacy-hero {
+  padding: 4rem 0 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(62, 196, 200, 0.05) 0%, transparent 100%);
+}
+
+.privacy-hero .hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.privacy-hero .hero-sub {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.privacy-content {
+  padding: 3rem 0;
+}
+
+.privacy-card {
+  background: var(--dark-card);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-card .section-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-section {
+  margin-bottom: 2.5rem;
+}
+
+.privacy-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.privacy-section p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.privacy-list {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.privacy-list li {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.privacy-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.privacy-list li strong {
+  color: var(--text-primary);
+}
+
+.contact-box {
+  background: var(--dark-surface);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.contact-box p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.contact-box strong {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .privacy-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .privacy-actions {
+    flex-direction: column;
+  }
+
+  .privacy-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .privacy-section h3 {
+    font-size: 1.25rem;
+  }
+}
