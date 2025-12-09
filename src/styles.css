@@ -101,7 +101,7 @@ body {
   list-style: none;
   padding: 1rem 0;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -130,7 +130,8 @@ body {
   transition: 0.3s;
 }
 
-.btn-cta, .btn {
+.btn-cta,
+.btn {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
@@ -142,12 +143,14 @@ body {
   font-size: 1rem;
 }
 
-.btn-cta, .btn.primary {
+.btn-cta,
+.btn.primary {
   background: var(--primary);
   color: var(--dark);
 }
 
-.btn-cta:hover, .btn.primary:hover {
+.btn-cta:hover,
+.btn.primary:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: var(--glow);
@@ -477,12 +480,29 @@ body {
   position: relative;
 }
 
-.industry-image.manufacturing { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-.industry-image.education { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-.industry-image.government { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-.industry-image.healthcare { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
-.industry-image.finance { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
-.industry-image.retail { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+.industry-image.manufacturing {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.industry-image.education {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.industry-image.government {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.industry-image.healthcare {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.industry-image.finance {
+  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.industry-image.retail {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
 
 .industry-card h3 {
   padding: 1.5rem;
@@ -813,6 +833,7 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -921,4 +942,34 @@ body {
   .industry-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.industry-card {
+  background: #0e1422;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+}
+
+.industry-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0f1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.industry-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
